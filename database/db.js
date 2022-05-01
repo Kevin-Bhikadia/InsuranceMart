@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 
 const connection = async () => {
-  const URL = process.env.db_url;
+  const URL =
+    "mongodb+srv://deep:deep@insurance.znise.mongodb.net/insurance?retryWrites=true&w=majority";
   try {
     await mongoose.connect(URL, {
       useNewUrlParser: true,
